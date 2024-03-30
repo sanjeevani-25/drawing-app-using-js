@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="script.js" defer></script>
+    <title>Drawing App Js</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="tools-board">
+            <div class="row">
+                <label for="" class="title">Shapes</label>
+                <ul class="options">
+                    <li class="option tool" id="rectangle">
+                        <i class="material-icons-outlined">rectangle</i>
+                        <span>Rectangle</span>
+                    </li>
+                    <li class="option tool" id="circle">
+                        <i class="material-icons-outlined">circle</i>
+                        <span>Circle</span>
+                    </li>
+                    <li class="option tool" id="triangle">
+                        <i class="material-icons-outlined">change_history</i>
+                        <span>Triangle</span>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="fill-color">
+                        <label for="fill-color">Fill Color</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <label for="" class="title">Options</label>
+                <ul class="options">
+                    <li class="option active tool" id="brush">
+                        <i class="material-icons-outlined">brush</i>
+                        <span>Brush</span>
+                    </li>
+                    <li class="option tool" id="eraser">
+                        <i class="material-icons-outlined">clear</i>
+                        <span>Eraser</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul class="options">
+                    <label for="" class="title">Brush Size</label>
+                    <br>
+                    <input type="range" id="size-slider" min="1" max="50" value="5">
+                </ul>
+            </div>
+            <div class="row">
+                <ul class="options">
+                    <label for="color-picker" class="title">Select Color</label>
+                    <br>
+                    <input type="color" id="color-picker">
+                </ul>
+            </div>
+            <div class="row">
+                <button class="clear-canvas">Clear Canvas</button>
+                <button class="save-img">Save As Image</button>
+            </div>
+        </section>
+        <section class="drawing-board">
+            <canvas></canvas>
+        </section>
+    </div>
+</body>
+
+</html>
